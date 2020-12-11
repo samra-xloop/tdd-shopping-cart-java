@@ -64,6 +64,7 @@ As a developer, your task is to implement the following user story, following th
 - Make a commit in git each time you get a passing test
 - After getting each test to pass, refactor your code and tests to be as concise as possible
 - Make another commit each time you finish a refactor
+- Submit the link to your completed code in [Learn]().
 
 ### Getting Started
 
@@ -73,11 +74,9 @@ As a developer, your task is to implement the following user story, following th
 
 You will know you have forked if you see the project in Github under your github account:
 
-![you](./img/personal.png)
+![Fork](./img/personal.png)
 
-***not gSchool:***
-
-![gSchool](./img/gSchool.png)
+**share the fork with your team** so that everyone can contribute to the code!
 
 **Select the right branch:**
 
@@ -88,6 +87,12 @@ You will know you have forked if you see the project in Github under your github
 ![Clone](./img/Clone.png)
 
 Once cloned, you start by setting up a Java project in the project. Make sure to commit once your Java project is set up. IE your first commit should be your working, empty Java project.
+
+### Tips
+
+* Establish rapport with your pair!
+* Establish when you'll swap roles (ping pong)
+* Take breaks at least once an hour.
 
 ## Acceptance Criteria:
 
