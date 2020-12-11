@@ -58,7 +58,7 @@ The shopping `Cart` should have the following model:
 }
 ```
 
-## TODO
+## Instructions
 
 As a developer, your task is to implement the following user story, following the TDD workflow:
 
@@ -67,10 +67,12 @@ As a developer, your task is to implement the following user story, following th
 - Make tests pass with simplest code possible
 - After getting each test to pass, refactor your code and tests to be as concise as possible
 
-## Instructions
+To get started:
 
 1. Fork this repository
 2. Clone your new fork onto your machine
+
+... and **share the fork with your team** so that everyone can contribute to the code!
 
 Submit the link to your completed code in [Learn]().
 
