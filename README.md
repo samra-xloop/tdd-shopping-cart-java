@@ -1,12 +1,8 @@
-# tdd-shopping-cart
+# TDD Shopping Cart
 
-You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches.
+You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
 
-Your job is to implement a shopping cart that stores items while customers are in the process of ordering. Since Ali Snobba is a small company with only one server, you don't need to store the items in Redis or a database - you can keep them in memory.
-
-You also don't need to worry about authentication or session tracking. You can assume that Ali Snobba's infrastructure will handle this for you.
-
-## API specifications
+## Object Specifications
 
 A shopping cart `Item` should have the following model:
 
@@ -58,30 +54,24 @@ The shopping `Cart` should have the following model:
 }
 ```
 
-## TODO
+## Instructions
 
 As a developer, your task is to implement the following user story, following the TDD workflow:
 
 - Write (failing) tests before writing any code
 - Only write code in response to failing test
 - Make tests pass with simplest code possible
+- Make a commit in git each time you get a passing test
 - After getting each test to pass, refactor your code and tests to be as concise as possible
+- Make another commit each time you finish a refactor
 
-## Instructions
+### Getting Started
 
 ***Be sure to fork:***
 
 ![Fork](./img/Fork.png)
 
-***then Clone:***
-
-![Clone](./img/Clone.png)
-
-***this repository!***
-
-When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
-
-You will know you have forked and pushed properly if you see your work in Github under your github account:
+You will know you have forked if you see the project in Github under your github account:
 
 ![you](./img/personal.png)
 
@@ -89,22 +79,34 @@ You will know you have forked and pushed properly if you see your work in Github
 
 ![gSchool](./img/gSchool.png)
 
-***Be sure to make a commit in git each time you get a passing test!***
+**Select the right branch:**
 
-## User Story:
+![Branch](./img/branch.png)
 
-- As a shopper
-- I want to have a shopping cart
-- So that I can store items until I am ready to checkout
+***then Clone your fork:***
+
+![Clone](./img/Clone.png)
+
+Once cloned, you start by setting up a Java project in the project. Make sure to commit once your Java project is set up. IE your first commit should be your working, empty Java project.
 
 ## Acceptance Criteria:
 
-1. Given that I visit the site, when I begin shopping, then I expect my cart to be empty.
+Ali Snobba has given you the following criteria to determine completeness of your project.
+
+1. Given that I a new shopper, when I begin shopping, then I expect my cart to be empty.
 1. Given I have an empty cart, when I add an Item, then I expect to `getTotalPrice()` reflect the sum of all the Items in my cart, times the quantities of each item.
 1. Given I have an empty cart, when I add more than one of an item, then I expect `itemQuantities()` to show the number of items I have added.
 1. Given I have an empty cart, when I add items, then I expect `itemizedList()` reflect the items I have added along with their price and quantity.
 1. Given I have an empty cart, when I add more than one of an item, then I expect `getTotalPrice()` to reflect both the item price and quantity.
 1. Given I have a cart with items that are not on sale, when I add items that are on sale, I expect `onSaleItems()` to include only the items on sale.
+
+## Stretch Goals
+
+If you get finished early, feel free to work towards these additions. This is not a exhaustive or exclusive list. Discuss with your pair what kind of improvements or changes you can make to this project.
+
+- Add a UI of some kind
+- Turn it into an API server so you can make requests against a shopping cart
+- Store the data in a Database
 
 ## Additional Resources
 - [Working with Currency](http://vanillajava.blogspot.de/2011/08/double-your-money-again.html)
