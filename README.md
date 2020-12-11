@@ -1,6 +1,6 @@
-# tdd-shopping-cart
+# Shopping Cart Lab
 
-You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches.
+You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Gooey Batton handbags and Lolex watches.
 
 Your job is to implement a shopping cart that stores items while customers are in the process of ordering. Since Ali Snobba is a small company with only one server, you don't need to store the items in Redis or a database - you can keep them in memory.
 
@@ -69,27 +69,16 @@ As a developer, your task is to implement the following user story, following th
 
 ## Instructions
 
-***Be sure to fork:***
+1. Fork this repository
+2. Clone your new fork onto your machine
 
-![Fork](./img/Fork.png)
+Submit the link to your completed code in [Learn]().
 
-***then Clone:***
+### Tips
 
-![Clone](./img/Clone.png)
-
-***this repository!***
-
-When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
-
-You will know you have forked and pushed properly if you see your work in Github under your github account:
-
-![you](./img/personal.png)
-
-***not gSchool:***
-
-![gSchool](./img/gSchool.png)
-
-***Be sure to make a commit in git each time you get a passing test!***
+* Establish rapport with your pair!
+* Establish when you'll swap roles (ping pong)
+* Take breaks at least once an hour.
 
 ## User Story:
 
@@ -100,11 +89,10 @@ You will know you have forked and pushed properly if you see your work in Github
 ## Acceptance Criteria:
 
 1. Given that I visit the site, when I begin shopping, then I expect my cart to be empty.
-1. Given I have an empty cart, when I add an Item, then I expect to `getTotalPrice()` reflect the sum of all the Items in my cart, times the quantities of each item.
-1. Given I have an empty cart, when I add more than one of an item, then I expect `itemQuantities()` to show the number of items I have added.
-1. Given I have an empty cart, when I add items, then I expect `itemizedList()` reflect the items I have added along with their price and quantity.
-1. Given I have an empty cart, when I add more than one of an item, then I expect `getTotalPrice()` to reflect both the item price and quantity.
-1. Given I have a cart with items that are not on sale, when I add items that are on sale, I expect `onSaleItems()` to include only the items on sale.
+1. Given I have an empty cart, when I add an Item, then I expect to see the total cost of all the items in my cart.
+1. Given I have an empty cart, when I add more than one of an item, then I expect to see the number of items I have added.
+1. Given I have an empty cart, when I add items, then I expect to see an itemized list with price and quantity.
+1. Given I have a cart with some items, when I add new items that are on sale, I expect `onSaleItems()` to include only the items on sale.
 
 ## Additional Resources
 - [Working with Currency](http://vanillajava.blogspot.de/2011/08/double-your-money-again.html)
