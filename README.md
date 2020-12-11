@@ -1,60 +1,8 @@
 # Shopping Cart Lab
 
-You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
+You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Gooey Baton handbags and Lolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
 
-## Object Specifications
-
-A shopping cart `Item` should have the following model:
-
-| Item   |            |
-|--------|------------|
-| name   | String     |
-| price  | currency   |
-| onSale | bool       |
-
-The shopping `Cart` should have the following model:
-
-| Cart               |           |
-|--------------------|-----------|
-| getItems()         | Item(s)   |
-| addItem(Item, int) | void      |
-| itemizedList()     | String(s) |
-| itemQuantities()   | String(s) |
-| onSaleItems()      | String(s) |
-
-`addItem()` should take two parameters:
-
-1. An `Item` Object
-1. An integer `quantity`
-
-`itemQuantities()` should return one String for each type of item in the cart in the following format:
-
-```Java
-{
-    'Handbag - x2', 
-    'Watch - x4'
-}
-``` 
-
-`itemizedList()` should return one String for each item in the cart in the following format:
-
-```JavaScript
-{
-    'Handbag x1 - $500.00', 
-    'Watch x2 - $40,000.00'
-}
-``` 
-
-`onSaleItems()` should return one String for each item in the cart marked as `onSale` in the following format:
-
-```Java
-{
-    'Handbag x1 - $250.00', 
-    'Watch x2 - $20,000.00'
-}
-```
-
-## Instructions
+## The Test Cycle
 
 As a developer, your task is to implement the following user story, following the TDD workflow:
 
@@ -62,31 +10,38 @@ As a developer, your task is to implement the following user story, following th
 - Only write code in response to failing test
 - Make tests pass with simplest code possible
 - Make a commit in git each time you get a passing test
-- After getting each test to pass, refactor your code and tests to be as concise as possible
+- After getting each test to pass, refactor
 - Make another commit each time you finish a refactor
-- Submit the link to your completed code in [Learn]().
 
-### Getting Started
+## Instructions
+
+1. Fork this repository
+2. Clone your new fork
+3. Submit the link to your completed code in [Learn](https://learn-2.galvanize.com/cohorts/2328).
+
+Once cloned, be sure to share the link to the new repository with your group! You'll both submit the same link to Learn for credit.
 
 ***Be sure to fork:***
 
 ![Fork](./img/Fork.png)
 
-You will know you have forked if you see the project in Github under your github account:
-
-![Fork](./img/personal.png)
-
-**share the fork with your team** so that everyone can contribute to the code!
-
-**Select the right branch:**
-
-![Branch](./img/branch.png)
-
-***then Clone your fork:***
+***then Clone:***
 
 ![Clone](./img/Clone.png)
 
-Once cloned, you start by setting up a Java project in the project. Make sure to commit once your Java project is set up. IE your first commit should be your working, empty Java project.
+***this repository!***
+
+When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
+
+You will know you have forked and pushed properly if you see your work in Github under your github account:
+
+![you](./img/personal.png)
+
+***not gSchool:***
+
+![gSchool](./img/gSchool.png)
+
+***Be sure to make a commit in git each time you get a passing test!***
 
 ### Tips
 
@@ -94,16 +49,19 @@ Once cloned, you start by setting up a Java project in the project. Make sure to
 * Establish when you'll swap roles (ping pong)
 * Take breaks at least once an hour.
 
+
 ## Acceptance Criteria:
 
-Ali Snobba has given you the following criteria to determine completeness of your project.
+Ali Snobba has given you the following criteria to determine completeness of your project. Note that there are no code implementation details. So you must collaborate with your partner on how best to implement the application.
 
 1. Given that I a new shopper, when I begin shopping, then I expect my cart to be empty.
-1. Given I have an empty cart, when I add an Item, then I expect to `getTotalPrice()` reflect the sum of all the Items in my cart, times the quantities of each item.
-1. Given I have an empty cart, when I add more than one of an item, then I expect `itemQuantities()` to show the number of items I have added.
-1. Given I have an empty cart, when I add items, then I expect `itemizedList()` reflect the items I have added along with their price and quantity.
-1. Given I have an empty cart, when I add more than one of an item, then I expect `getTotalPrice()` to reflect both the item price and quantity.
-1. Given I have a cart with items that are not on sale, when I add items that are on sale, I expect `onSaleItems()` to include only the items on sale.
+1. Given I have an empty cart, when I add an Item, then I expect to the price reflect the sum of all the Items in my cart.
+1. Given I have cart with one item, when I add more of that item, then I expect to see its quantity update on the cart.
+1. Given I have an empty cart, when I add items, then I expect it to see an itemized list of the items along with their price and quantity.
+1. Given I have a cart with items that are not on sale, when I add an item that's on sale, I expect to see it highlighted.
+1. Given I have a cart with items, when I remove an item, then I expect the cart to display the updated itemized list.
+1. Given I have one item in my cart with a quantity of 3, when I remove one, then I expect the cart to have 2 of that item.
+
 
 ## Stretch Goals
 
