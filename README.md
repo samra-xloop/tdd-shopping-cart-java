@@ -1,58 +1,6 @@
 # Shopping Cart Lab
 
-You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Gooey Batton handbags and Lolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
-
-## Object Specifications
-
-A shopping cart `Item` should have the following model:
-
-| Item   |            |
-|--------|------------|
-| name   | String     |
-| price  | currency   |
-| onSale | bool       |
-
-The shopping `Cart` should have the following model:
-
-| Cart               |           |
-|--------------------|-----------|
-| getItems()         | Item(s)   |
-| addItem(Item, int) | void      |
-| itemizedList()     | String(s) |
-| itemQuantities()   | String(s) |
-| onSaleItems()      | String(s) |
-
-`addItem()` should take two parameters:
-
-1. An `Item` Object
-1. An integer `quantity`
-
-`itemQuantities()` should return one String for each type of item in the cart in the following format:
-
-```Java
-{
-    'Handbag - x2', 
-    'Watch - x4'
-}
-``` 
-
-`itemizedList()` should return one String for each item in the cart in the following format:
-
-```JavaScript
-{
-    'Handbag x1 - $500.00', 
-    'Watch x2 - $40,000.00'
-}
-``` 
-
-`onSaleItems()` should return one String for each item in the cart marked as `onSale` in the following format:
-
-```Java
-{
-    'Handbag x1 - $250.00', 
-    'Watch x2 - $20,000.00'
-}
-```
+You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Gooey Baton handbags and Lolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
 
 ## The Test Cycle
 
@@ -72,6 +20,28 @@ As a developer, your task is to implement the following user story, following th
 3. Submit the link to your completed code in [Learn](https://learn-2.galvanize.com/cohorts/2328).
 
 Once cloned, be sure to share the link to the new repository with your group! You'll both submit the same link to Learn for credit.
+
+***Be sure to fork:***
+
+![Fork](./img/Fork.png)
+
+***then Clone:***
+
+![Clone](./img/Clone.png)
+
+***this repository!***
+
+When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
+
+You will know you have forked and pushed properly if you see your work in Github under your github account:
+
+![you](./img/personal.png)
+
+***not gSchool:***
+
+![gSchool](./img/gSchool.png)
+
+***Be sure to make a commit in git each time you get a passing test!***
 
 ### Tips
 
