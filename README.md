@@ -1,4 +1,4 @@
-# TDD Shopping Cart
+# Shopping Cart Lab
 
 You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches. Your job is to implement a shopping cart that stores items while customers are in the process of ordering.
 
